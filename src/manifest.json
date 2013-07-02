@@ -1,0 +1,16 @@
+{
+  "name": "Timing",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "html5 performance timing API",
+  "browser_action": {
+  	"default_icon": "icon.gif",
+  	"default_popup": "popup.html" 
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["performance.js"]
+    }
+  ]
+}
