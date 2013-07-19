@@ -1,16 +1,15 @@
 {
   "name": "Timing",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "manifest_version": 2,
   "description": "html5 performance timing API",
   "browser_action": {
-  	"default_icon": "icon.gif",
-  	"default_popup": "popup.html" 
+  	"default_icon": "icon.gif"
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*"],
-      "js": ["performance.js"]
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery-1.8.2.min.js", "raphael-min.js", "performance.js"]
     }
   ]
 }
