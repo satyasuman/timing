@@ -9,7 +9,8 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["jquery-1.8.2.min.js", "raphael-min.js", "performance.js"]
+      "js": ["jquery-1.8.2.min.js", "raphael-min.js", "performance.js"],
+      "run_at": "document_end"
     }
   ]
 }
