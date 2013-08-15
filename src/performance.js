@@ -151,6 +151,7 @@
 			fill: "#fff"
 		});
 		canvas.text(530, textY + 15 + rectHeight / 2, "unload").attr(textAttr);
+
 		eventGroup.canvas = canvas;
 		eventGroup.navigationStart = {
 			x: 80,
@@ -273,8 +274,6 @@
     }, false);
 
   }
-
-
 
   openChartBtn.click(function() {
 
